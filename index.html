@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuts - Coffee, Nuts & Chocolates</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar__brand">
+        <img
+          src="./public/icons/logo.png"
+          alt="Nuts Logo"
+          class="navbar__logo"
+        />
+      </div>
+      <button
+        class="menu"
+        style="background-color: transparent; border: none; display: none"
+        id="navbarMenuIcon"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="navbarLinks"
+      >
+        <img src="./public//icons/menu.png" alt="" style="width: 22px" />
+      </button>
+      <nav class="navbar__links" id="navbarLinks">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#">Staff</a>
+        <a href="#contact">Contact us</a>
+      </nav>
+      <div class="navbar__icons">
+        <span class="navbar__icon" id="cartIcon">
+          <img
+            src="public/icons/cart.svg"
+            alt="Cart"
+            style="width: 24px; height: 24px"
+          />
+          <span id="cartCount" class="cart-count">0</span>
+        </span>
+      </div>
+    </header>
+    <hr class="navbar__divider" />
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stat">
+        <div class="stat__number">30+</div>
+        <div class="stat__label">Coffee Variant</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">20+</div>
+        <div class="stat__label">Chocolate Variant</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">25+</div>
+        <div class="stat__label">Nuts Variant</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">40+</div>
+        <div class="stat__label">Canned Juice</div>
+      </div>
+    </section>
+    <hr class="stats__divider" />
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero__title">Enjoy Your Favorite<br />Coffee with Nuts</h1>
+      <p class="hero__subtitle">
+        Discover tranquility at Nuts a sanctuary for unwinding,<br />
+        where your evenings are perfected with relaxation and rich flavors.
+      </p>
+      <a class="explore-btn" href="#products">
+        EXPLORE PRODUCT <span class="explore-btn__arrow">&rarr;</span>
+      </a>
+      <div class="hero__gallery">
+        <img
+          src="./public/products/coffee_1.jpg"
+          alt="Coffee Beans"
+          class="hero__img"
+        />
+        <img src="./public/coffee_2.jpg" alt="Barista" class="hero__img" />
+        <img
+          src="./public/products/coffee_5.jpg"
+          alt="Serving Coffee"
+          class="hero__img"
+        />
+        <img
+          src="./public/products/coffee_3.jpg"
+          alt="Latte Art"
+          class="hero__img"
+        />
+        <img
+          src="./public/products/coffee_4.jpg"
+          alt="Pouring Coffee"
+          class="hero__img"
+        />
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="products floating" id="products">
+        <h1>Our Products</h1>
+        <p>From Top Quality Materials</p>
+      </div>
+
+      <div class="categories">
+        <button class="category-btn active" data-category="all">
+          All Products
+        </button>
+        <button class="category-btn" data-category="hotCoffe">
+          Hot Coffee
+        </button>
+        <button class="category-btn" data-category="icedCoffe">
+          Iced Coffe
+        </button>
+        <button class="category-btn" data-category="Nuts">Nuts</button>
+        <button class="category-btn" data-category="chocolates">
+          Chocolates
+        </button>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <!-- Products will be dynamically inserted here -->
+        </div>
+        <div class="carousel-nav">
+          <button class="nav-btn" id="prevBtn">‹</button>
+          <button class="nav-btn" id="nextBtn">›</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="about container" id="about">
+      <h2>Why we are the best</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            aliquid corporis dolor non facilis distinctio dicta blanditiis
+            debitis delectus aperiam ipsa cupiditate veniam praesentium nobis
+            tempora quaerat harum, recusandae sit.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            aliquid corporis dolor non facilis distinctio dicta blanditiis
+            debitis delectus aperiam ipsa cupiditate veniam praesentium nobis
+            tempora quaerat harum, recusandae sit.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            aliquid corporis dolor non facilis distinctio dicta blanditiis
+            debitis delectus aperiam ipsa cupiditate veniam praesentium nobis
+            tempora quaerat harum, recusandae sit.
+          </p>
+        </div>
+        <div class="about-images">
+          <img src="./public/products/coffee_2.jpg" alt="Coffee Beans" />
+          <img src="./public/products/ice_coffee_2.jpg" alt="Nuts" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container container">
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+            rows="6"
+          ></textarea>
+          <button type="submit" class="whatsapp-btn">Send via WhatsApp</button>
+        </form>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019019858019!2d-122.4194151846817!3d37.7749297797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e0a6e2b%3A0x8c8e8e8e8e8e8e8e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+            width="100%"
+            height="250"
+            style="border: 0; border-radius: 12px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <div id="cartOffcanvas" class="cart-offcanvas">
+      <div class="cart-offcanvas__header">
+        <h3>Your Cart</h3>
+        <button id="closeCart" class="cart-offcanvas__close">&times;</button>
+      </div>
+      <div id="cartItems" class="cart-offcanvas__items"></div>
+      <div class="cart-offcanvas__footer">
+        <button id="checkoutBtn" class="cart-offcanvas__checkout">
+          Checkout
+        </button>
+      </div>
+    </div>
+    <div id="cartOffcanvasBackdrop" class="cart-offcanvas__backdrop"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
