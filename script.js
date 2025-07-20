@@ -7,7 +7,7 @@ const products = {
       title: "Colombian Dark Roast",
       description: "Rich, bold flavor with notes of chocolate and caramel",
       price: "$19",
-      image: "/products/ice_coffee_1.webp",
+      image: "public/products/ice_coffee_1.webp",
       gradient: "linear-gradient(45deg, #667eea, #764ba2)",
     },
     {
@@ -15,7 +15,7 @@ const products = {
       title: "French Vanilla Latte",
       description: "Smooth espresso with creamy vanilla and steamed milk",
       price: "$39",
-      image: "/products/ice_coffee_2.jpg",
+      image: "public/products/ice_coffee_2.jpg",
       gradient: "linear-gradient(45deg, #f093fb, #f5576c)",
     },
     {
@@ -23,7 +23,7 @@ const products = {
       title: "Espresso Italiano",
       description: "Authentic Italian espresso beans for the perfect shot",
       price: "$24",
-      image: "/products/ice_coffee_3.jpg",
+      image: "public/products/ice_coffee_3.jpg",
       gradient: "linear-gradient(45deg, #4facfe, #00f2fe)",
     },
   ],
@@ -33,7 +33,7 @@ const products = {
       title: "Roasted Almonds",
       description: "Premium California almonds with sea salt seasoning",
       price: "$12",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #fa709a, #fee140)",
     },
     {
@@ -41,7 +41,7 @@ const products = {
       title: "Mixed Nuts Deluxe",
       description: "Cashews, walnuts, pecans, and pistachios blend",
       price: "$18",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #a8edea, #fed6e3)",
     },
     {
@@ -49,7 +49,7 @@ const products = {
       title: "Honey Roasted Peanuts",
       description: "Sweet and savory peanuts with natural honey glaze",
       price: "$8",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #ffecd2, #fcb69f)",
     },
   ],
@@ -59,7 +59,7 @@ const products = {
       title: "Dark Chocolate Truffles",
       description: "Belgian dark chocolate with rich ganache center",
       price: "$25",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #ff9a9e, #fecfef)",
     },
     {
@@ -67,7 +67,7 @@ const products = {
       title: "Milk Chocolate Assortment",
       description: "Variety box of creamy milk chocolate bonbons",
       price: "$22",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #a18cd1, #fbc2eb)",
     },
     {
@@ -75,7 +75,7 @@ const products = {
       title: "White Chocolate Pralines",
       description: "Delicate white chocolate with hazelnut praline filling",
       price: "$28",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #fad0c4, #ffd1ff)",
     },
   ],
@@ -85,7 +85,7 @@ const products = {
       title: "Iced Caramel Macchiato",
       description: "Cold brew with vanilla syrup and caramel drizzle",
       price: "$5",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #a8e6cf, #dcedc1)",
     },
     {
@@ -93,7 +93,7 @@ const products = {
       title: "Cold Brew Concentrate",
       description: "Smooth, less acidic coffee perfect over ice",
       price: "$15",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #ff8a80, #ffb74d)",
     },
     {
@@ -101,7 +101,7 @@ const products = {
       title: "Frappé Mocha",
       description: "Blended iced coffee with chocolate and whipped cream",
       price: "$6",
-      image: "/products/ice_coffee_4.jpg",
+      image: "public/products/ice_coffee_4.jpg",
       gradient: "linear-gradient(45deg, #81c784, #aed581)",
     },
   ],
@@ -363,7 +363,7 @@ function renderCartItems() {
           <button class="cart-qty-btn" data-action="increase" data-title="${item.title}" style="width:24px;height:24px;">+</button>
         </div>
         <span style="margin-left:12px;">${item.price}</span>
-        <button class="cart-remove-btn" data-title="${item.title}" style="background:none;border:none;color:#a00;font-size:1.2rem;margin-left:8px;cursor:pointer;"><img src="/icons/trash.png" style="width:22px;height:22px;"/></button>
+        <button class="cart-remove-btn" data-title="${item.title}" style="background:none;border:none;color:#a00;font-size:1.2rem;margin-left:8px;cursor:pointer;"><img src="public/icons/trash.png" style="width:22px;height:22px;"/></button>
       </div>
     `;
     })
